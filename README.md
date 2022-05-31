@@ -44,6 +44,11 @@
   cat backup.sql | sudo docker exec -i id_image psql -U postgres -d data_base_name
 
 ```
+- (download local backup docker(postgres))
+```
+  docker exec name_image pg_dumpall -U postgres > /home/usr/backups/my_backup.sql
+
+```
 
 
 ##### NOTE:  in older versions of docker compose it is necessary to assign the ` - ` ex: (docker-compose)
